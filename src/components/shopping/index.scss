@@ -1,0 +1,57 @@
+.souch{
+    width: 100%;
+ 
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    li {
+        width: 31%;
+        height: auto;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        border: 1px solid #eee;
+        img{
+            width: 100%;
+            height: auto;
+            border: none;
+        }
+        .oneneo{
+            height: 50px;
+        }
+        span{
+            
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding-bottom: 5px;
+            .span-one{
+                .span-kk{
+                    color: red;
+                    font-size: 16px;
+                }
+            }  
+            .span-three{
+                .span-yy{
+                    text-decoration: line-through;
+                    font-size: 12px;
+                    
+                }
+            }
+                
+            
+            .span-two{
+                width: 25px;
+                height: 25px;
+                background: red;
+                color: white;
+                line-height: 25px;
+                text-align: center;
+                border-radius: 50%;
+                font-size: 16px;
+                
+            }
+        }
+    }
+}

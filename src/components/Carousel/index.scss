@@ -1,0 +1,43 @@
+.title-wap{
+    overflow-x: scroll;
+    .title-aba{
+        width: 300%;
+        display: flex;
+        margin: 0 10px;
+        li{
+            width: 30%;
+            height: 200px;
+            background: white;
+            margin-right: 10px;
+            border-radius: 10px;
+            border: 1px solid #ccc;
+            
+            img{
+                width: 100%;
+                height: auto;
+                border-radius: 10px;
+                border: none;
+            }
+            span{
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                padding-bottom: 5px;
+                .span-one{
+                    .span-kk{
+                        color: red;
+                        font-size: 16px;
+                    }
+                } 
+                .span-three{
+                    .span-yy{
+                        text-decoration: line-through;
+                        font-size: 12px;
+                        
+                    }
+                } 
+            }
+        }
+    }
+
+}

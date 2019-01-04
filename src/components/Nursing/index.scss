@@ -1,0 +1,17 @@
+.nabar{
+    .bami{
+        // width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        li{
+            width: 50%;
+            // margin-top: 10px;
+            img{
+                width: 100%;
+                height: auto;
+                border: none;
+            }
+        }
+    }
+}
