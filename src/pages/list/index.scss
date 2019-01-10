@@ -16,7 +16,23 @@
             margin-left: 2.5rem;
         }
     }
-    ul{
+    .shuju-title{
+        display: flex;
+        justify-content:space-around;
+        font-size: 16px;
+        background: #FAFAFA;
+        flex-wrap: nowrap;
+        li{
+            height: 40px;
+            line-height: 40px;
+            
+        }
+        .active{
+            border-bottom: 3px solid #6ad6c3;
+        }
+    }
+    
+    .shuju{
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
@@ -24,6 +40,7 @@
             width: 47%;
             border: 1px solid #ccc;
             border-bottom: none;
+            box-sizing: content-box;
             img{
                 width: 100%;
                 height: auto;
@@ -32,12 +49,17 @@
                 height: 50px;
                 margin-left: 5px;
                 .top-one{
-                    font-size: 14px;
+                    font-size: 12px;
                     color: #000;
                     
                 }
                 .botton-one{
                     color: #919090;
+                }
+                .botton-one:after{
+                    display: inline;
+                    content: "...";
+                    font-size: 16px;
                 }
             }
             p{
@@ -62,5 +84,10 @@
             }
            
         }
+    }
+    .loading{
+        text-align: center;
+        color: lightblue;
+        font-size: 20px;
     }
 }

@@ -23,4 +23,95 @@
        
         
     }
+    .qianggou{
+        ul{
+            li{
+                display: flex;
+                .leftImg{
+                    width: 40%;
+                    img{
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+                .right-shu{
+                    .jintutiao{
+                        width: 80%;
+                        transform: skew(-30deg);
+                        width: 2.92rem;
+                        margin-top: .26667rem
+                    }
+                }
+            }
+        }
+    }
+    .shijian{
+        font-size: 20px;
+        color: #000;
+        display: flex;
+        padding: 0 10px;
+        .haoduo2{
+            margin-left: 25%;
+        }
+    }
+    .miaosha{
+        overflow-x: scroll;
+        
+        ul{
+            width: 300%;
+            display: flex;
+            margin: 0 10px;
+            
+            li{
+                width: 100%;
+                height: 200px;
+                background: white;
+                margin-right: 10px;
+                border-radius: 10px;
+                border: 1px solid #ccc;
+                
+                img{
+                    width: 100%;
+                    height: auto;
+                }
+                .width{
+                    margin-left: 10px;
+                    font-weight: bold;
+                    .wenzi:after{
+                        display: inline;
+                        content: "...";
+                        font-size: 18px;
+                        
+                    }
+                    .yanse{
+                        font-size: 16px;
+                        color: pink;
+                    }
+                    .henxian{
+                        color: pink;
+                        text-decoration: line-through;
+                        font-size: 12px;
+                        margin-left: 10%;
+                    }
+                    
+                }
+               
+            }
+        }
+    }
+    .mian-mo{
+        ul{
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            li{
+                width: 3.15556rem;
+                border: 1px solid #ccc;
+                border-bottom: none;
+                .huaxian{
+                    text-decoration: line-through;
+                }
+            }
+        }
+    }
 }

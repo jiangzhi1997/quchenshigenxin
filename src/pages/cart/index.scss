@@ -1,0 +1,32 @@
+.Cart{
+    .cart_title{
+        width: 100%;
+        height: 50px;
+        border-bottom: 1px solid #ccc;
+        font-size: 18px;
+        line-height: 50px;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 5px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background: white;
+    }
+    .shop-CART{
+        margin-top: 50px;
+        ul{
+            li{
+                display: flex;
+                .cart-Img{
+                    width: 40%;
+                    img{
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+            }
+        }
+    }
+}

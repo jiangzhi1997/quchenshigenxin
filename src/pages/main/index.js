@@ -18,6 +18,7 @@ import Mywelfare from '../../components/welfare'
 import MyNursing from '../../components/Nursing'
 // import ReactSwiper from 'reactjs-swiper';
 import BackTop from '../../mixin/BackTop'
+import Timer from '../../components/time'
 
 function onChange(a, b, c) {
     // console.log(a, b, c);
@@ -29,7 +30,9 @@ class Main extends Component{
         this.state={
             visible:true,
             swiperList:[],
-            dataTime:''
+            dataTime:'',
+            maskImg:'',
+            titleImg:''
         }
     }
     handleOk = (e) => {
@@ -56,6 +59,18 @@ class Main extends Component{
             console.log(res)
             this.setState({
                 dataTime:res.data.specials_info_d_t_o
+            })
+        })
+        axios.get("topic/data/T20190104113548494?device_id=02313940-12e2-11e9-b57c-8f9df2153916").then((res)=>{
+            console.log(res)
+            this.setState({
+                titleImg:res.data.data.layout[9].content.image
+            })
+        })
+        axios.get("topic/data/T20190104113548494?device_id=02313940-12e2-11e9-b57c-8f9df2153916").then((res)=>{
+            console.log(res)
+            this.setState({
+                maskImg:res.data.data.layout[10].content.image
             })
         })
     }
@@ -86,8 +101,8 @@ class Main extends Component{
                 </div>
                 <div className="Moving">
                     <div className="Moving-title">
-                        <span>今日秒杀</span>
-                        <span>更多好货</span>
+                        <span>今日秒杀</span><Timer></Timer>
+                        <span className="haoduo">更多好货</span>
                     </div>
                     <MyCarousel afterChange={onChange}></MyCarousel>
                 </div>
@@ -98,10 +113,10 @@ class Main extends Component{
                     <Myshopping></Myshopping>
                 </div>
                 <div>
-                    <img src="https://image.watsons.com.cn//upload/49c535e1.jpg" alt=""/>
+                    <img src={this.state.titleImg} alt=""/>
                 </div>
                 <div>
-                    <Link to="/list"><img src="https://image.watsons.com.cn//upload/3965e404.jpg" alt=""/></Link>
+                    <Link to="/list"><img src={this.state.maskImg} alt=""/></Link>
                 </div>
                 <div className="MyEmollient">
                     <MyEmollient></MyEmollient>

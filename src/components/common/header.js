@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import {NavLink,withRouter} from 'react-router-dom'
+import {NavLink,withRouter,Link} from 'react-router-dom'
 import './header.scss'
 import {Icon,Input,Drawer} from 'antd'
 
@@ -26,7 +26,7 @@ class Header extends Component{
                     pathname === '/' || pathname === '/life'||pathname === '/global'||pathname === '/mask'?
                     <div className="qcs-header">
                         <div className="qcs-top">
-                            <Icon type="user" />
+                            <Link to="/center">{localStorage['token']?<img className="wode" src="http://image.watsons.com.cn/upload/hahy4f2323.png" alt='' />:<Icon type="user" className="haqian" />}</Link>
                             <div>
                             <Icon type="search" />
                             <Input

@@ -22,9 +22,9 @@ const items = [
 ];
 
   const swiperOptions = {
-    preloadImages: true,
+    preloadImages: false,
     autoplay: 1000,
-    autoplayDisableOnInteraction: false
+    autoplayDisableOnInteraction: true
   };
 class Life extends Component{
     

@@ -1,0 +1,109 @@
+.denglu{
+    .top-title{
+            height: 200px;
+            background: url('https://asset.watsons.com.cn/h5/static/images/member/daytime/b076c715779ea5d69467646fc.png') 35% no-repeat;
+            background-size: cover;
+            animation-name: animate-tree;
+            animation-duration: 3s;
+            animation-fill-mode: forwards;
+            animation-iteration-count: infinite;
+            background-color: #59DAC5;
+        .fanhui{
+            display: flex;
+            justify-content: space-between;
+            padding: 0 5px;
+            span{
+                color: white;
+                font-size: 24px;
+                
+            }
+        }
+        .tupian{
+            width: 100px;
+            height: 100px;
+            margin-left: 35%;
+            text-align: center;
+            img{
+                width: 100%;
+                height: auto;
+                border-radius: 50%;
+
+            }
+        }
+        .shouye{
+            width: 30%;
+            height: 30px;
+            background: rgba(0, 0, 0, .5);
+            margin-top: 4%;
+            margin-left: 70%;
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+            display: flex;
+            justify-content: space-around;
+            line-height: 30px;
+            color: white;
+        }
+    }
+    .dingdan{
+        background: white;
+        .quanbu{
+            display: flex;
+            justify-content: space-between;
+            font-size: 16px;
+            padding: 0 5px;
+            
+        }
+        .narbar{
+            
+            ul{
+                display: flex;
+                
+                li{
+                    width: 75px;
+                    text-align: center;
+                    .nar-one{
+                        font-size: 25px;
+                    }
+                    p{
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+    .wocai{
+        background: white;
+        .baside{
+            font-size: .4rem;
+            border-bottom: 1px solid #ccc;
+            p{
+                padding-left: 5px;
+            }
+        }
+        ul{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            font-size: .32rem;
+            li{
+                width: 25%;
+                height: 97px;
+                text-align: center;
+                
+                span{
+                    font-size: 25px;
+                }
+                p{
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+    .txt{
+        padding-top: .66667rem;
+        padding-bottom: .66667rem;
+        text-align: center;
+        color: #919090;
+        font-size: .32rem;
+    }
+}

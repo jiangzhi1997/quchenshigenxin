@@ -43,6 +43,7 @@ export default class BackTop extends Component {
                 this.state.show?
                 <div className="backTop" onClick={this.backTop}>
                     <Icon type="up-circle" />
+                    
                 </div>
                 :''
             }
